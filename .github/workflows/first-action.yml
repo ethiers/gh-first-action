@@ -1,0 +1,16 @@
+name: First Workflow
+
+# Controls when the workflow will run
+# Trigger manuallally
+on: workflow_dispatch
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodby
+        run: echo "Done - bye!"
+    
